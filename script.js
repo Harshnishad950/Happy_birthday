@@ -16,7 +16,7 @@ const music = document.getElementById("bg-music");
 const musicBtn = document.getElementById("musicBtn");
 
 // ====== Date setup ======
-const TARGET_UNLOCK_DATE = "2025-09-02T03:58"; // <-- Sender apni date yahan set kare
+const TARGET_UNLOCK_DATE = "2025-09-04T00:00"; // <-- Sender apni date yahan set kare
 
 let targetDate = TARGET_UNLOCK_DATE;
 localStorage.setItem(DATE_KEY, new Date(targetDate).toString());

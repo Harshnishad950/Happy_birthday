@@ -16,7 +16,7 @@ const music = document.getElementById("bg-music");
 const musicBtn = document.getElementById("musicBtn");
 
 // ====== Date setup ======
-const TARGET_UNLOCK_DATE = "2025-09-02T00:44"; // Sender set kare yahan
+const TARGET_UNLOCK_DATE = "2025-09-02T00:48"; // Sender set kare yahan
 
 let targetDate = TARGET_UNLOCK_DATE; // force set
 inputEl.value = new Date(targetDate).toISOString().slice(0,16);

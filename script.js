@@ -16,11 +16,12 @@ const music = document.getElementById("bg-music");
 const musicBtn = document.getElementById("musicBtn");
 
 // ====== Date setup ======
-const params = new URLSearchParams(window.location.search);
-const urlTarget = params.get('unlock');
-let targetDate = urlTarget || "2025-08-30T11:18"; // default fallback
+const TARGET_UNLOCK_DATE = "2025-09-02T00:44"; // Sender set kare yahan
 
+let targetDate = TARGET_UNLOCK_DATE; // force set
+inputEl.value = new Date(targetDate).toISOString().slice(0,16);
 localStorage.setItem(DATE_KEY, new Date(targetDate).toString());
+
 
 // Hide date selection UI
 if (inputEl) inputEl.style.display = "none";

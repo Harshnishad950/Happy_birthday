@@ -397,9 +397,10 @@ body {
   box-shadow: 0 18px 50px rgba(36, 35, 35, 0.5); /* cake click ke baad */
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 800px) {
   .hero {
-    grid-template-columns: 1fr; /* single column layout */
+    grid-template-columns: 2fr; /* single column layout */
+    max-width: 400px;
   }
   .photo-box {
     /* max-width:150px; */

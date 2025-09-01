@@ -16,16 +16,15 @@ const music = document.getElementById("bg-music");
 const musicBtn = document.getElementById("musicBtn");
 
 // ====== Date setup ======
-const TARGET_UNLOCK_DATE = "2025-09-02T00:48"; // Sender set kare yahan
+const TARGET_UNLOCK_DATE = "2025-09-02T03:58"; // <-- Sender apni date yahan set kare
 
-let targetDate = TARGET_UNLOCK_DATE; // force set
-inputEl.value = new Date(targetDate).toISOString().slice(0,16);
+let targetDate = TARGET_UNLOCK_DATE;
 localStorage.setItem(DATE_KEY, new Date(targetDate).toString());
 
-
-// Hide date selection UI
+// Input form permanently hide karo
 if (inputEl) inputEl.style.display = "none";
 if (saveBtn) saveBtn.style.display = "none";
+
 
 
 // ====== Timer ======
